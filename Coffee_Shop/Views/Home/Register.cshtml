@@ -1,0 +1,28 @@
+﻿@model UserModel
+
+<h3><b>Registration:</b></h3>
+<br />
+
+<form action="SubmitReg" method="post">
+    <table>
+        <tr>
+            <td>First Name: </td>
+            <td>@Html.TextBoxFor(m => m.firstName)</td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td>@Html.TextBoxFor(m => m.lastName)</td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td>@Html.TextBoxFor(m => m.email)</td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td>@Html.TextBoxFor(m => m.password)</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+</form>
